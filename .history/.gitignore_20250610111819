@@ -1,0 +1,7 @@
+.vercel
+vendor/
+.env
+node_modules/
+*.log
+/public/storage
+.DS_Store
