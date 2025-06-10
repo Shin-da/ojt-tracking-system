@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #EDEDE2; /* Coconut */
+  color: #412F26; /* Cocoa */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #412F26; /* Cocoa */
+}
+
+button, input, select, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  font-family: inherit !important;
+}
+
+.react-calendar__tile {
+  padding: 1em 0.5em !important;
+}
+
+.react-calendar__tile--now {
+  background: #dbeafe !important;
+}
+
+.react-calendar__tile--active {
+  background: #2563eb !important;
+  color: white !important;
+}
+
+.react-calendar__tile--active:hover {
+  background: #1d4ed8 !important;
+}
+
+.react-calendar__tile--hasActive {
+  background: #2563eb !important;
+  color: white !important;
+}
+
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+  background: #2563eb !important;
+  color: white !important;
+  border-radius: 0.375rem;
+}
+
+.react-calendar__tile--range {
+  background: #dbeafe !important;
+}
+
+.react-calendar button:enabled:hover {
+  background-color: #f3f4f6 !important;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: transparent !important;
+}

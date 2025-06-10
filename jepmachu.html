@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJT Tracker - Under Maintenance</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .maintenance-container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .icon {
+            font-size: 5rem;
+            color: #1a73e8;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            color: #202124;
+            margin-bottom: 1rem;
+        }
+        .message {
+            color: #5f6368;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        .developer-info {
+            font-size: 0.9rem;
+            color: #80868b;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e0e0e0;
+        }
+        .progress-bar {
+            width: 200px;
+            height: 4px;
+            background-color: #e0e0e0;
+            margin: 2rem auto;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .progress {
+            width: 30%;
+            height: 100%;
+            background-color: #1a73e8;
+            animation: progress 1.5s ease-in-out infinite;
+        }
+        @keyframes progress {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(400%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="icon">🛠️</div>
+        <h1>Under Maintenance</h1>
+        <p class="message">
+            We're currently updating the OJT Tracker to bring you a better experience.<br>
+            Please check back soon.
+        </p>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="developer-info">
+            Developed by: JEPMACHU<br>
+            Expected completion: Soon
+        </div>
+    </div>
+</body>
+</html>

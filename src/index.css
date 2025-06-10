@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global styles */
+:root {
+  --primary: #6A6F4C; /* Organic */
+  --primary-dark: #5D2510; /* Palm Oil */
+  --primary-light: #CBB89D; /* Butter */
+  --secondary: #CBB89D; /* Butter */
+  --accent: #806044; /* Natural */
+  --accent-dark: #5D2510; /* Palm Oil */
+  --background: #EDEDE2; /* Coconut */
+  --surface: #ffffff;
+  --text-primary: #412F26; /* Cocoa */
+  --text-secondary: #806044; /* Natural */
+  --gradient-start: #6A6F4C; /* Organic */
+  --gradient-end: #806044; /* Natural */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+button, input, select, textarea {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-xl shadow-sm p-6 transition-all duration-200 hover:shadow-md;
+}
+
+/* Button styles */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-100 text-gray-700 hover:bg-gray-200;
+}
+
+/* Input styles */
+.input {
+  @apply w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+/* Calendar styles */
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  font-family: inherit !important;
+  @apply rounded-xl shadow-sm;
+}
+
+.react-calendar__tile {
+  padding: 1em 0.5em !important;
+  @apply rounded-lg;
+}
+
+.react-calendar__tile--now {
+  background: #dbeafe !important;
+  @apply font-medium;
+}
+
+.react-calendar__tile--active {
+  background: var(--primary) !important;
+  color: white !important;
+}
+
+.react-calendar__tile--active:hover {
+  background: var(--primary-dark) !important;
+}
+
+.react-calendar__tile--hasActive {
+  background: var(--primary) !important;
+  color: white !important;
+}
+
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+  background: var(--primary) !important;
+  color: white !important;
+  @apply rounded-lg;
+}
+
+.react-calendar__tile--range {
+  background: #dbeafe !important;
+}
+
+.react-calendar button:enabled:hover {
+  background-color: #f3f4f6 !important;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: transparent !important;
+}
