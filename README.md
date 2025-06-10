@@ -1,26 +1,60 @@
-# OJT Tracking System
+# OJT TRACKER
 
-A web application for tracking On-the-Job Training progress and management.
+A web-based On-the-Job Training Management System designed to streamline the tracking and management of student internships.
 
-## About
-This system helps manage and monitor On-the-Job Training (OJT) programs, tracking student progress, attendance, and evaluations.
+## 🚀 Features
 
-## Installation
+- Student management and tracking
+- Real-time attendance monitoring
+- Progress tracking and evaluation
+- Document management
+- Report generation
+- User role management (Admin, Coordinator, Student)
 
-1. Clone the repository:
+## 💻 Tech Stack
+
+- PHP
+- MySQL
+- HTML/CSS
+- JavaScript
+- Bootstrap
+- XAMPP
+
+## 🛠️ Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/ojt-tracker.git
    ```
-<<<<<<< HEAD
-   git clone https://github.com/Shin-da/ojt-tracking-system.git
-=======
-   git clone https://github.com/YOUR_USERNAME/ojt-tracking-system.git
->>>>>>> a7894a7899cd146145da396f215d54f5cd1b5b16
-   ```
-2. Set up your database
-3. Configure your environment variables
-4. Run the application
 
-## Features
-- Student management
-- Progress tracking
-- Attendance monitoring
-- Evaluation system
+2. Set up XAMPP
+   - Install XAMPP
+   - Place the project in `htdocs` folder
+   - Start Apache and MySQL services
+
+3. Configure Database
+   - Create a new database named `ojt_db`
+   - Import the provided SQL file
+
+4. Environment Setup
+   - Copy `.env.example` to `.env`
+   - Update database credentials
+
+## 🏃‍♂️ Running the Application
+
+1. Access the application through:
+   ```
+   http://localhost/OJT TRACKER
+   ```
+
+2. Default login credentials:
+   - Admin: admin@admin.com / admin123
+   - Student: student@example.com / student123
+
+## 📝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📄 License
+
+[MIT](https://choosealicense.com/licenses/mit/)
